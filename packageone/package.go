@@ -1,8 +1,9 @@
 package packageone
 
-var priateVar = "I am private"
-var PublicVar = "I am public (or exported)"
+import "fmt"
 
-func notExported() {}
+var PackageVar = "package-level variable in packageone"
 
-func Exported() {}
+func PrintMe(first, second, third string) {
+	fmt.Println(first, second, third)
+}
